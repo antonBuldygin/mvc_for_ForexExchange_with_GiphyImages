@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<form method="post">
+    <p>
+        <label>Выбери Валюту</label>
+        <br/>
+        <br/>
+        <select name="teachers" size="1">
+            <option th:each="job : ${teachers}" th:value="${job}" th:text="${job}"></option>
+        </select>
+    </p>
+    <p>
+    <p>
+        <button>Lets' Go Buddy</button>
+    </p>
+</form>
+
+
+<body>
+
+<br/>
+<p th:text="' Currency =  '+${type}+'   '+${RichOrBroke}" />
+<br/>
+<img th:src="${url}" />
+<br/>
+<p th:text="'Today Forex  ' + ${name} + '!'+${type}+' = '+${currency}+'  '+${today}" />
+<p th:text="'Previous day FOREX ' + ${name} + '!'+${type}+' = '+${currencyPD} +'  '+${date}" />
+</body>
+
+
+</html>
