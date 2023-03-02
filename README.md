@@ -1,5 +1,7 @@
-# mvc_exercise
- 
+# mvc_exercis
+
+Открыть программу перейдя по ссылке - http://antonbuld.site/greeting,
+
 Cервис, который обращается к сервису курсов валют, и отображает gif:
 если курс по отношению к USD за сегодня стал выше вчерашнего, то отдаем рандомную отсюда https://giphy.com/search/rich
 если ниже - отсюда https://giphy.com/search/broke
